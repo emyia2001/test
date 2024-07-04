@@ -3,57 +3,24 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      // links: [
-      //   {
-      //     text: 'SaaS',
-      //     href: getPermalink('/homes/saas'),
-      //   },
-      //   {
-      //     text: 'Startup',
-      //     href: getPermalink('/homes/startup'),
-      //   },
-      //   {
-      //     text: 'Mobile App',
-      //     href: getPermalink('/homes/mobile-app'),
-      //   },
-      //   {
-      //     text: 'Personal',
-      //     href: getPermalink('/homes/personal'),
-      //   },
-      // ],
+      text: '首页',
+      href: getPermalink('/'),
     },
     {
-      text: 'Pages',
+      text: '服务详细',
       links: [
-        // {
-        //   text: 'Features (Anchor Link)',
-        //   href: getPermalink('/#features'),
-        // },
         {
-          text: 'Services',
+          text: '限时优惠',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: '价格',
           href: getPermalink('/pricing'),
         },
-        // {
-        //   text: 'Contact',
-        //   href: getPermalink('/contact'),
-        // },
-        // {
-        //   text: 'Terms',
-        //   href: getPermalink('/terms'),
-        // },
-        // {
-        //   text: 'Privacy policy',
-        //   href: getPermalink('/privacy'),
-        // },
       ],
     },
     {
-      text: 'Landing',
+      text: '课程展示',
       links: [
                 {
           text: '好文分享',
@@ -81,33 +48,9 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'Blog',
-    //   links: [
-    //     {
-    //       text: 'Blog List',
-    //       href: getBlogPermalink(),
-    //     },
-    //     {
-    //       text: 'Article',
-    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-    //     },
-    //     {
-    //       text: 'Article (with MDX)',
-    //       href: getPermalink('markdown-elements-demo-post', 'post'),
-    //     },
-    //     {
-    //       text: 'Category Page',
-    //       href: getPermalink('tutorials', 'category'),
-    //     },
-    //     {
-    //       text: 'Tag Page',
-    //       href: getPermalink('astro', 'tag'),
-    //     },
-    //   ],
-    // },
+ 
     {
-      text: 'help',
+      text: 'Help',
       href: getPermalink('/help'),
     },
   ],
